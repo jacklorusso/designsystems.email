@@ -1,0 +1,63 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+
+import './index.css'
+
+const Footer = () => (
+  <div className="h3 w-50-l w-70-m w-90 center flex content-center items-center">
+    <div className="black-60 fl w-50 lh-copy">
+      <p>
+        Curated by<br />
+        <a
+          className="link dim blue fw5"
+          href="https://twitter.com/lol_russo"
+          target="_blank"
+        >
+          {' '}
+          Jack Lo Russo
+        </a>
+      </p>
+    </div>
+    <div className="black-60 fl w-50 tr lh-copy">
+      <p>
+        Runs on<br />
+        <a
+          className="link dim blue fw5"
+          href="https://buttondown.email"
+          target="_blank"
+        >
+          Buttondown
+        </a>
+      </p>
+    </div>
+  </div>
+)
+
+const TemplateWrapper = ({ children }) => (
+  <div className="bg-white ">
+    <Helmet
+      title="Design Systems Weekly"
+      meta={[
+        {
+          name: 'description',
+          content:
+            'A curated selection of links, articles & (occasionally) opinions about design systems, front-end architecture, style guides, pattern libraries, and CSS at scale.',
+        },
+        {
+          name: 'keywords',
+          content:
+            'design systems, styleguides, product design, CSS framework, design system guide',
+        },
+      ]}
+    />
+    {children()}
+    <Footer />
+  </div>
+)
+
+TemplateWrapper.propTypes = {
+  children: PropTypes.func,
+}
+
+export default TemplateWrapper

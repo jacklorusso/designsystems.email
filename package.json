@@ -1,0 +1,29 @@
+{
+  "name": "designsystems.email",
+  "description": "Design Systems Weekly website",
+  "version": "1.0.0",
+  "author": "Jack Lo Russo <jack.lorusso@gmail.com>",
+  "keywords": [
+    "design systems",
+    "newsletter",
+    "gatsby",
+    "tachyons"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "scripts": {
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^1.8.12",
+    "gatsby-link": "^1.6.8",
+    "gatsby-plugin-google-analytics": "^1.0.7",
+    "gatsby-plugin-react-helmet": "^1.0.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.5.2"
+  }
+}
