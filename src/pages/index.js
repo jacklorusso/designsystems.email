@@ -100,10 +100,10 @@ const Hero = () => (
         </div>
       </div>
       <h1 className="pt2 f2-ns f3 fw5 white lh-title">Design Systems Weekly</h1>
-      <p className="white-60 measure f4-ns -f5 fw3 lh-title">
-        A curated selection of tools, tips, talks and opinions about design
-        systems, front-end architecture, style guides, pattern libraries, CSS at
-        scale, and other design systems-related topics.
+      <p className="white-60 measure f4-ns f5 fw3 lh-title">
+        A curated selection of articles and tools on all things design systems,
+        styleguides and front-end architecture. Get the latest on how to build,
+        scale and prevent entropy in your system delivered to your inbox.
       </p>
       <form
         className="pt4"
@@ -122,11 +122,12 @@ const Hero = () => (
         />
         <input type="hidden" value="1" name="embed" />
         <input
-          className="sign-up-button bg-blue white w4-ns w-100 hover-bg-dark-blue br--right-ns br2 mt0-ns mt1"
+          className="sign-up-button bg-blue white w4-ns w-100 hover-bg-dark-blue br--right-ns br2 mt0-ns mt3"
           type="submit"
           value="Sign Up"
         />
       </form>
+      <p className="white-30 measure f5-ns f6 fw3 lh-title">No spam. Ever.</p>
     </div>
   </section>
 )
@@ -136,14 +137,14 @@ const Issues = () => (
     <div className="w-50-l w-70-m w-90 center">
       <h2 className="black f3 pb4">Issues</h2>
       <ol className="list">
-        <li className="black-60 pt4 pb4 bb bt b--black-20">
+        <li className="black-60 pt4 pb4 bb bt b--black-20 f4">
           Issue 01 — coming Tuesday 12 September
         </li>
         {/* <li className="black-60 pt4">
             <a className="link dim blue fw5" href="#" target="_blank">
-              Issue 01
+          Issue 01
             </a>
-          </li> */}
+        </li> */}
       </ol>
     </div>
   </main>

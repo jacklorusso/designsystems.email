@@ -100,11 +100,14 @@ const ThankYou = () => (
           </svg>
         </div>
       </div>
-      <h1 className="pt2 f2 fw5 white">Thank you.</h1>
+      <h1 className="pt2 f2 fw5 white">Thank you</h1>
       <p className="white-60 measure f4 fw3 lh-copy">
-        I hope you enjoy the emails. I'd love to hear what you think!{' '}
-        <a className="link dim blue fw4">Hit me up</a> on Twitter with feedback,
-        heckling or just to say hello.
+        I hope you enjoy the emails.{' '}
+        <a className="link dim blue fw4" href="https://twitter.com/lol_russo">
+          Hit me up
+        </a>{' '}
+        on Twitter if you've got feedback, suggestions for content, or just to
+        say hi.
       </p>
       <Link to="/">
         <button className="sign-up-button bg-blue white w4-ns w-100 hover-bg-dark-blue br2 mt3">
