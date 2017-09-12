@@ -7,3 +7,7 @@ public/
 .DS_Store
 yarn-error.log
 yarn.lock
+
+# notes file for WIP/thoughts
+notes.md
+
