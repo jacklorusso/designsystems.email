@@ -42,7 +42,7 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            'A curated selection of links, articles & (occasionally) opinions about design systems, front-end architecture, style guides, pattern libraries, and CSS at scale.',
+            'A curated selection of articles and tools on all things design systems, styleguides and front-end architecture. Get the latest on how to build, scale and prevent entropy in your system delivered to your inbox.',
         },
         {
           name: 'keywords',
