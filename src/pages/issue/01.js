@@ -1,15 +1,17 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import Hero from '../../components/Hero'
+import Nav from '../../components/Nav';
+import Item from '../../components/Item';
+import A from '../../components/A';
+import Quote from '../../components/Quote';
 
 const IssueContent = () => (
   <main className="bg-white mt5 mb6">
     <div className="w-50-l w-70-m w-90 center">
       <Link to="/" className="link dim blue fw5">
-        ← Back
+        ← Home
       </Link>
-
       <h2 className="black f3 pt4 pb4">Issue 01</h2>
       <div className="pb4 bb b--black-20 f5 lh-copy">
         <p>You're reading the very first issue of Design Systems Weekly 🎉</p>
@@ -23,24 +25,17 @@ const IssueContent = () => (
         </p>
         <p>Without further ado:</p>
       </div>
-      <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
-        <h3 className="black f4 ma0">
-          Integrating Animation into a Design System [Article]
-        </h3>
-        <p>
-          Motion is often introduced to a project in an ad hoc fashion. This
-          article provides a solid foundation for the process of transitioning
-          your menagerie of animations into a cohesive system. It’s packed with
-          practical tips and examples from some of the most robust design
-          systems in the wild.
-        </p>
-        <a
-          href="https://alistapart.com/article/integrating-animation-into-a-design-system"
-          className="link dim blue fw5"
-        >
-          via A List Apart
-        </a>
-      </div>
+      <Item
+        headline="Integrating Animation into a Design System [Article]"
+        linkText="via A List Apart"
+        href="https://alistapart.com/article/integrating-animation-into-a-design-system"
+      >
+        Motion is often introduced to a project in an ad hoc fashion. This
+        article provides a solid foundation for the process of transitioning
+        your menagerie of animations into a cohesive system. It’s packed with
+        practical tips and examples from some of the most robust design systems
+        in the wild.
+      </Item>
       <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
         <h3 className="black f4 ma0">
           Introducing Design Systems Into Chaos [Talk]
@@ -76,9 +71,7 @@ const IssueContent = () => (
           named accordingly. The worked examples are especially valuable to
           those working with React or other component-based frameworks.
         </p>
-        <blockquote className="pl3 mt4 mb4 i bl bw2 b--black-20">
-          Our components are the vocabulary of our design system.
-        </blockquote>
+        <Quote>Our components are the vocabulary of our design system.</Quote>
         <a
           href="https://www.rethinkhq.com/videos/thinking-in-symbols-for-universal-design-benjamin-wilkins-aribnb"
           className="link dim blue fw5"
@@ -161,13 +154,13 @@ const IssueContent = () => (
       </h3>
     </div>
   </main>
-)
+);
 
-const IndexPage = () => (
+const Issue01 = () => (
   <div>
-    <Hero />
+    <Nav />
     <IssueContent />
   </div>
-)
+);
 
-export default IndexPage
+export default Issue01;

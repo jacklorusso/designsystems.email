@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 const Hero = props => (
   <section className="bg-black hero">
-    <div className="bg-black pt6 pb5 w-50-l w-70-m w-90 center">
+    <div className="bg-black pt5 pb5 w-50-l w-70-m w-90 center">
       <div className="flex items-center justify-start">
         <div className="icon pr2">
           <svg width="50" height="50" viewBox="0 0 100 100">
@@ -100,7 +100,7 @@ const Hero = props => (
         </div>
       </div>
       <h1 className="pt2 f2-ns f3 fw5 white lh-title">Design Systems Weekly</h1>
-      <p className="white-60 measure f4-ns f5 fw3 lh-title">{props.message}</p>
+      <p className="white-60 f5 fw3 lh-title">{props.message}</p>
       <form
         className="pt4"
         action="https://buttondown.email/api/emails/embed-subscribe/jack.lorusso"
@@ -110,7 +110,7 @@ const Hero = props => (
         class="embeddable-buttondown-form"
       >
         <input
-          className="sign-up-form w-50-l w-60-m w-100 br--left-ns br2"
+          className="sign-up-form w-70-ns w-100 br--left-ns br2"
           type="email"
           name="email"
           placeholder="Your email"
@@ -118,7 +118,7 @@ const Hero = props => (
         />
         <input type="hidden" value="1" name="embed" />
         <input
-          className="sign-up-button bg-blue white w4-ns w-100 hover-bg-dark-blue br--right-ns br2 mt0-ns mt3"
+          className="sign-up-button bg-blue white w-30-ns w-100 hover-bg-dark-blue br--right-ns br2 mt0-ns mt3"
           type="submit"
           value="Sign Up"
         />
@@ -126,6 +126,6 @@ const Hero = props => (
       <p className="white-30 measure f5-ns f6 fw3 lh-title">No spam. Ever.</p>
     </div>
   </section>
-)
+);
 
-export default Hero
+export default Hero;
