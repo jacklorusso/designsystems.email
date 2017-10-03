@@ -1,10 +1,13 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import Link from "gatsby-link";
 
-import Nav from '../../components/Nav';
-import Item from '../../components/Item';
-import A from '../../components/A';
-import Quote from '../../components/Quote';
+import Nav from "../../components/Nav";
+import Title from "../../components/Title";
+import Intro from "../../components/Intro";
+import Item from "../../components/Item";
+import A from "../../components/A";
+import Quote from "../../components/Quote";
+import Outro from "../../components/Outro";
 
 const IssueContent = () => (
   <main className="bg-white mt5 mb6">
@@ -12,22 +15,19 @@ const IssueContent = () => (
       <Link to="/" className="link dim blue fw5">
         ← Home
       </Link>
-      <h2 className="black f3 pt4 pb4">Issue 02</h2>
-      <div className="pb4 bb b--black-20 f5 lh-copy">
-        <p>
-          This week we learn from the best, fight for the value of front-end
-          mastery, catch up on designing for iOS 11, and take a look at the
-          latest design tool on the block.
-        </p>
-      </div>
+      <Title>Issue 02</Title>
+      <Intro>
+        This week we learn from the best, fight for the value of front-end
+        mastery, catch up on designing for iOS 11, and take a look at the latest
+        design tool on the block.
+      </Intro>
       <Item
         headline="Design Systems Features, Step-by-Step [Article]"
-        linkText="via Eightshapes"
         href="https://medium.com/eightshapes-llc/system-features-step-by-step-e69c90982630"
       >
         <p>
           Nathan Curtis takes us through the Eightshapes workflow for building
-          new design systems features:{' '}
+          new design systems features:{" "}
           <span className="fw6">
             Discover > Design > Build > Doc > Publish.
           </span>
@@ -35,7 +35,6 @@ const IssueContent = () => (
       </Item>
       <Item
         headline="Intercom’s Emmet Connolly on design systems [Podcast]"
-        linkText="via Inside Intercom"
         href="https://blog.intercom.com/emmet-connolly-design-systems/"
       >
         <p>
@@ -48,7 +47,6 @@ const IssueContent = () => (
       </Item>
       <Item
         headline="Full-Stack Developers [Article]"
-        linkText="via Brad Frost"
         href="http://bradfrost.com/blog/post/full-stack-developers/"
       >
         <p>
@@ -62,22 +60,21 @@ const IssueContent = () => (
         </Quote>
         <p>
           Fighting for the value of mastery over HTML and CSS has been somewhat
-          of a theme recently, with Mandy Michael’s{' '}
+          of a theme recently, with Mandy Michael’s{" "}
           <A href="https://medium.com/@mandy.michael/is-there-any-value-in-people-who-cannot-write-javascript-d0a66b16de06">
             Medium article
-          </A>{' '}
-          and{' '}
+          </A>{" "}
+          and{" "}
           <A href="https://twitter.com/chriseppstein/status/908332267394580481">
             this tweet
-          </A>{' '}
+          </A>{" "}
           from Chris Eppstein blowing up this week. Brad Frost’s article comes
           at the topic from a different angle, but it’s all part of the story of
           front-end architecture struggling for recognition.
         </p>
       </Item>
       <Item
-        headline="iOS 11 Human Interface Guidelines [Resource]"
-        linkText="via Apple"
+        headline="iOS 11 Human Interface Guidelines [Link]"
         href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/"
       >
         <p>
@@ -85,28 +82,27 @@ const IssueContent = () => (
           probably seen or at least heard about the iPhone X. Whether you’re an
           iPhone person or not, it’s probably worthwhile for anyone working on a
           product that targets mobile to have a read through the updated Human
-          Interface Guidelines — or at least this opportunistic{' '}
+          Interface Guidelines — or at least this opportunistic{" "}
           <A href="https://blog.prototypr.io/designing-for-the-iphone-x-4239d5ac736c">
             summary article
-          </A>{' '}
+          </A>{" "}
           on Medium.
         </p>
         <p>
           Spoiler alert: Apple wants you to embrace “the notch”, not hide it.
-          These snippets from{' '}
+          These snippets from{" "}
           <A href="https://css-tricks.com/the-notch-and-css/">CSS Tricks</A> may
           also be of use to you.
         </p>
       </Item>
       <Item
         headline="Compositor Lab Beta [Tool]"
-        linkText="via Compositor"
         href="https://developer.apple.com/ios/human-interface-guidelines/overview/themes/"
       >
         <p>
           <Link to="/issue/01" className="link dim blue fw5">
             Issue 01
-          </Link>{' '}
+          </Link>{" "}
           of this newsletter featured Colm Tuite’s critique of the current state
           of design tooling, which finished with a preview of the next
           generation of tools. Compositor is one of the more exciting projects
@@ -116,17 +112,17 @@ const IssueContent = () => (
           For now, Lab is a bare bones, no-nonsense tool for building systems of
           components using shared values from a theme. If you’re used to
           authoring components in code using your favourite flavour of CSS-in-JS
-          with{' '}
+          with{" "}
           <A href="https://github.com/jxnblk/styled-system">
             styled-system
-          </A>{' '}
-          (or your own theme variables) and a{' '}
+          </A>{" "}
+          (or your own theme variables) and a{" "}
           <A href="https://github.com/react-theming/react-theme-provider">
             ThemeProvider
-          </A>{' '}
+          </A>{" "}
           wrapper, Lab is unlikely to change your life… But if you have no idea
           what that last sentence means, using Lab’s GUI might just solve some
-          problems for you.{' '}
+          problems for you.{" "}
         </p>
         <p>
           You can export modular code that can be dropped straight into your
@@ -134,9 +130,7 @@ const IssueContent = () => (
           tools, which is a bitmap image.
         </p>
       </Item>
-      <h3 className="black f4 pb5 pt5">
-        That's all for this week. Thanks for reading!
-      </h3>
+      <Outro />
     </div>
   </main>
 );

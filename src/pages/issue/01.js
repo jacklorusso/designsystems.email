@@ -1,10 +1,12 @@
-import React from 'react';
-import Link from 'gatsby-link';
+import React from "react";
+import Link from "gatsby-link";
 
-import Nav from '../../components/Nav';
-import Item from '../../components/Item';
-import A from '../../components/A';
-import Quote from '../../components/Quote';
+import Nav from "../../components/Nav";
+import Title from "../../components/Title";
+import Item from "../../components/Item";
+import A from "../../components/A";
+import Quote from "../../components/Quote";
+import Outro from "../../components/Outro";
 
 const IssueContent = () => (
   <main className="bg-white mt5 mb6">
@@ -12,7 +14,7 @@ const IssueContent = () => (
       <Link to="/" className="link dim blue fw5">
         ← Home
       </Link>
-      <h2 className="black f3 pt4 pb4">Issue 01</h2>
+      <Title>Issue 01</Title>
       <div className="pb4 bb b--black-20 f5 lh-copy">
         <p>You're reading the very first issue of Design Systems Weekly 🎉</p>
         <p>
@@ -27,7 +29,6 @@ const IssueContent = () => (
       </div>
       <Item
         headline="Integrating Animation into a Design System [Article]"
-        linkText="via A List Apart"
         href="https://alistapart.com/article/integrating-animation-into-a-design-system"
       >
         Motion is often introduced to a project in an ad hoc fashion. This
@@ -36,10 +37,10 @@ const IssueContent = () => (
         practical tips and examples from some of the most robust design systems
         in the wild.
       </Item>
-      <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
-        <h3 className="black f4 ma0">
-          Introducing Design Systems Into Chaos [Talk]
-        </h3>
+      <Item
+        headline="Introducing Design Systems Into Chaos [Talk]"
+        href="https://www.rethinkhq.com/videos/introducing-design-systems-into-chaos-diana-mounter-github"
+      >
         <p>
           Diana Mounter leads GitHub’s design systems team, who are responsible
           for building and maintaining the Primer CSS framework. She gives a
@@ -53,17 +54,11 @@ const IssueContent = () => (
           engineers working on less mature products will have gleamed some
           encouragement from this.
         </p>
-        <a
-          href="https://www.rethinkhq.com/videos/introducing-design-systems-into-chaos-diana-mounter-github"
-          className="link dim blue fw5"
-        >
-          via RETHINK
-        </a>
-      </div>
-      <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
-        <h3 className="black f4 ma0">
-          Thinking in Symbols for Universal Design [Talk]
-        </h3>
+      </Item>
+      <Item
+        headline="Thinking in Symbols for Universal Design [Talk]"
+        href="https://www.rethinkhq.com/videos/thinking-in-symbols-for-universal-design-benjamin-wilkins-aribnb"
+      >
         <p>
           Ben Wilkinson is Design Systems Lead at Airbnb. In this talk he takes
           us through the approach taken by Airbnb’s Design Language System
@@ -72,51 +67,30 @@ const IssueContent = () => (
           those working with React or other component-based frameworks.
         </p>
         <Quote>Our components are the vocabulary of our design system.</Quote>
-        <a
-          href="https://www.rethinkhq.com/videos/thinking-in-symbols-for-universal-design-benjamin-wilkins-aribnb"
-          className="link dim blue fw5"
-        >
-          via RETHINK
-        </a>
-      </div>
-      <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
-        <h3 className="black f4 ma0">
-          Building a Design System for HealthCare.gov [Article]
-        </h3>
+      </Item>
+      <Item
+        headline="Building a Design System for HealthCare.gov [Article]"
+        href="https://blog.navapbc.com/healthcare-gov-design-system-fc27964a14c9"
+      >
         <p>
-          Focusing on the technical side of the{' '}
-          <a
-            href="https://blog.navapbc.com/healthcare-gov-design-system-fc27964a14c9"
-            className="link dim blue fw5"
-          >
-            HealthCare.gov design system
-          </a>{' '}
-          project, this piece takes a look at the decisions made regarding
-          architecture, documentation, developer workflow, audits, and
-          distribution.
+          Focusing on the technical side of the{" "}
+          <A href="">HealthCare.gov design system</A> project, this piece takes
+          a look at the decisions made regarding architecture, documentation,
+          developer workflow, audits, and distribution.
         </p>
-        <a
-          href="https://blog.navapbc.com/building-a-design-system-for-healthcare-gov-20dc1a833ab3"
-          className="link dim blue fw5"
-        >
-          via Nava PBC
-        </a>
-      </div>
-      <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
-        <h3 className="black f4 ma0">
-          Design Tools are Running Out of Track [Article]
-        </h3>
+      </Item>
+      <Item
+        headline="Design Tools are Running Out of Track [Article]"
+        href="https://medium.freecodecamp.org/design-tools-are-running-out-of-track-94f21b6ae939"
+      >
         <p>
           Colm Tuite dissects a number of problems with the current state of
           mainstream design tooling - primarily, the fact that our tools export
           to images, instead of resembling the fluid and interactive context of
-          our products. Jon Gold’s piece{' '}
-          <a
-            href="http://jon.gold/2017/08/dragging-rectangles/"
-            className="link dim blue fw5"
-          >
+          our products. Jon Gold’s piece{" "}
+          <A href="http://jon.gold/2017/08/dragging-rectangles/">
             Dragging Rectangles
-          </a>{' '}
+          </A>{" "}
           is another great read on the topic.
         </p>
         <p>
@@ -124,34 +98,20 @@ const IssueContent = () => (
           solving this fundamental problem — the most interesting projects in
           this space are teased at the end of the piece.
         </p>
-        <a
-          href="https://medium.freecodecamp.org/design-tools-are-running-out-of-track-94f21b6ae939"
-          className="link dim blue fw5"
-        >
-          via freeCodeCamp
-        </a>
-      </div>
-      <div className="pb5 pt5 bb b--black-20 f5 lh-copy">
-        <h3 className="black f4 ma0">
-          Writing Scalable React Apps with the Component Folder Pattern
-          [Tutorial]
-        </h3>
+      </Item>
+      <Item
+        headline="Writing Scalable React Apps with the Component Folder Pattern
+        [Tutorial]"
+        href="https://medium.com/styled-components/component-folder-pattern-ee42df37ec68"
+      >
         <p>
           Breaking down complex pieces of a UI into bite sized and logical units
           of work is always a challenge. The component folder pattern is a handy
           approach to have up your sleeve to help organise your directory
           structure and make your components easier to understand and maintain.
         </p>
-        <a
-          href="https://medium.com/styled-components/component-folder-pattern-ee42df37ec68"
-          className="link dim blue fw5"
-        >
-          via styled-components
-        </a>
-      </div>
-      <h3 className="black f4 pb5 pt5">
-        That's all for this week. Thanks for reading!
-      </h3>
+      </Item>
+      <Outro />
     </div>
   </main>
 );
