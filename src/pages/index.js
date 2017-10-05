@@ -9,14 +9,14 @@ const Issues = () => (
       <h2 className="black f3 pb4">Issues</h2>
       <ol className="list">
         <li className="black-60 pt4 pb4 bt b--black-20 f5">
-          Issue 04 – coming soon
+          Issue 05 – coming soon
         </li>
-        {/* <li className="black-60 pt4 pb4 bt b--black-20 f5">
+        <li className="black-60 pt4 pb4 bt b--black-20 f5">
           <Link to="/issue/04" className="link dim blue fw5">
             Issue 04
           </Link>
-          <span className="fr">3 October '17</span>
-        </li> */}
+          <span className="fr">5 October '17</span>
+        </li>
         <li className="black-60 pt4 pb4 bt b--black-20 f5">
           <Link to="/issue/03" className="link dim blue fw5">
             Issue 03

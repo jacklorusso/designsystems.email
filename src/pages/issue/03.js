@@ -53,11 +53,11 @@ const IssueContent = () => (
           It's actually the third in a series of articles, with the author also
           penning useful pieces on writing
           <A href="https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412">
-            HTML
+            {' '}HTML{' '}
           </A>
           and
           <A href="https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9">
-            JavaScript
+            {' '}JavaScript{' '}
           </A>
           with accessibility in mind.
         </p>
@@ -122,7 +122,7 @@ const IssueContent = () => (
           This book has been available as a pre-order eBook from Smashing
           Magazine for a while, but the hardcover will start shipping any day
           now. I highly recommend it. In fact, I think{" "}
-          <strong>Part 1: Foundations</strong>
+          <strong>Part 1: Foundations</strong>{' '}
           is worth your money – and that's before you even get to{" "}
           <strong>Part 2: Process</strong>.
         </p>
