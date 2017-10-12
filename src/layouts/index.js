@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
 
-import './index.css'
+import "./index.css";
 
 const Footer = () => (
   <div className="h3 w-50-l w-70-m w-90 center flex content-center items-center">
@@ -14,7 +14,7 @@ const Footer = () => (
           href="https://twitter.com/lol_russo"
           target="_blank"
         >
-          {' '}
+          {" "}
           Jack Lo Russo
         </a>
       </p>
@@ -32,7 +32,7 @@ const Footer = () => (
       </p>
     </div>
   </div>
-)
+);
 
 const TemplateWrapper = ({ children }) => (
   <div className="bg-white ">
@@ -40,24 +40,24 @@ const TemplateWrapper = ({ children }) => (
       title="Design Systems Weekly"
       meta={[
         {
-          name: 'description',
+          name: "description",
           content:
-            'A curated selection of articles and tools on all things design systems, styleguides and front-end architecture. Get the latest on how to build, scale and prevent entropy in your system delivered to your inbox.',
+            "A curated selection of links covering all things design systems, styleguides, pattern libraries and front-end architecture. Get the latest on how others are building, scaling and preventing entropy in their systems delivered to your inbox."
         },
         {
-          name: 'keywords',
+          name: "keywords",
           content:
-            'design systems, styleguides, product design, CSS framework, design system guide',
-        },
+            "design systems, styleguides, product design, CSS framework, design system guide"
+        }
       ]}
     />
     {children()}
     <Footer />
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+  children: PropTypes.func
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
