@@ -4,7 +4,7 @@ import Link from "gatsby-link";
 import Hero from "../components/Hero";
 
 const IssueItem = props => (
-  <Link className="link dim blue fw5" to={props.path}>
+  <Link className="issue-item link dim blue fw5" to={props.path}>
     <li className="black-60 pt4 pb4 bt b--black-20 f5">
       <span className="link dim blue fw5">Issue {props.number}</span>
       <span className="fr fw4 black-50">{props.date}</span>

@@ -93,7 +93,7 @@ const NotFoundPage = () => (
                 fill="#000"
                 stroke="#FFF"
                 strokeWidth="3"
-                fillopacity=".9"
+                fillOpacity=".9"
                 points="35.5 45 47 68 24 68"
               />
             </g>

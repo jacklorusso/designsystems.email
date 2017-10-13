@@ -1,17 +1,20 @@
-import React from 'react';
+import React from "react";
+import Link from "gatsby-link";
 
 const Nav = props => (
   <section className="bg-black hero">
     <div className="bg-black pt3 pb3 w-50-l w-70-m w-90 center">
-      <h1 className="pt2 f2-ns f3 fw5 white lh-title">Design Systems Weekly</h1>
+      <Link to="/">
+        <h1 className="pt2 f2-ns f3 fw5 white lh-title">
+          Design Systems Weekly
+        </h1>
+      </Link>
       <p className="white-60 f5 fw3 lh-title">{props.message}</p>
       <form
         className="pt3"
         action="https://buttondown.email/api/emails/embed-subscribe/jack.lorusso"
         method="post"
         target="popupwindow"
-        onsubmit="window.open('https://buttondown.email/jack.lorusso', 'popupwindow')"
-        class="embeddable-buttondown-form"
       >
         <input
           className="sign-up-form w-70-ns w-100 br--left-ns br2"

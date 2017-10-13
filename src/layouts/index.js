@@ -6,7 +6,7 @@ import "./index.css";
 
 const Footer = () => (
   <div className="h3 w-50-l w-70-m w-90 center flex content-center items-center">
-    <div className="black-60 fl w-50 lh-copy">
+    <div className="black-50 fl w-50 lh-copy">
       <p>
         Curated by<br />
         <a
@@ -19,7 +19,7 @@ const Footer = () => (
         </a>
       </p>
     </div>
-    <div className="black-60 fl w-50 tr lh-copy">
+    <div className="black-50 fl w-50 tr lh-copy">
       <p>
         Runs on<br />
         <a

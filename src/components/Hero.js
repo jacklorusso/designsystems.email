@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import Link from "gatsby-link";
 
 const Hero = props => (
   <section className="bg-black hero">
@@ -92,22 +93,24 @@ const Hero = props => (
                 fill="#000"
                 stroke="#FFF"
                 strokeWidth="3"
-                fillopacity=".9"
+                fillOpacity=".9"
                 points="35.5 45 47 68 24 68"
               />
             </g>
           </svg>
         </div>
       </div>
-      <h1 className="pt2 f2-ns f3 fw5 white lh-title">Design Systems Weekly</h1>
-      <p className="white-60 f5 fw3 lh-title">{props.message}</p>
+      <Link to="/">
+        <h1 className="pt2 f2-ns f3 fw5 white lh-title">
+          Design Systems Weekly
+        </h1>
+      </Link>
+      <p className="white-80 f5 fw3 lh-title">{props.message}</p>
       <form
         className="pt4"
         action="https://buttondown.email/api/emails/embed-subscribe/jack.lorusso"
         method="post"
         target="popupwindow"
-        onsubmit="window.open('https://buttondown.email/jack.lorusso', 'popupwindow')"
-        class="embeddable-buttondown-form"
       >
         <input
           className="sign-up-form w-70-ns w-100 br--left-ns br2"
@@ -123,7 +126,7 @@ const Hero = props => (
           value="Sign Up"
         />
       </form>
-      <p className="white-30 measure f5-ns f6 fw3 lh-title">No spam. Ever.</p>
+      <p className="white-40 measure f5-ns f6 fw3 lh-title">No spam. Ever.</p>
     </div>
   </section>
 );

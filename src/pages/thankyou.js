@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react";
+import Link from "gatsby-link";
 
 const ThankYou = () => (
   <section className="bg-black hero">
@@ -93,7 +93,7 @@ const ThankYou = () => (
                 fill="#000"
                 stroke="#FFF"
                 strokeWidth="3"
-                fillopacity=".9"
+                fillOpacity=".9"
                 points="35.5 45 47 68 24 68"
               />
             </g>
@@ -101,13 +101,12 @@ const ThankYou = () => (
         </div>
       </div>
       <h1 className="pt2 f2 fw5 white">Thank you</h1>
-      <p className="white-60 measure f4 fw3 lh-copy">
-        I hope you enjoy the emails.{' '}
-        <a className="link dim blue fw4" href="https://twitter.com/lol_russo">
-          Hit me up
-        </a>{' '}
-        on Twitter if you've got feedback, suggestions for content, or just to
-        say hi.
+      <p className="white-80 measure f4 fw3 lh-copy">
+        I hope you enjoy the emails. Let me know on{" "}
+        <a className="link dim white fw4" href="https://twitter.com/lol_russo">
+          Twitter
+        </a>{" "}
+        if you've got feedback, suggestions for content, or just to say hi.
       </p>
       <Link to="/">
         <button className="sign-up-button bg-blue white w4-ns w-100 hover-bg-dark-blue br2 mt3">
@@ -116,6 +115,6 @@ const ThankYou = () => (
       </Link>
     </div>
   </section>
-)
+);
 
-export default ThankYou
+export default ThankYou;
