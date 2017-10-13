@@ -154,11 +154,12 @@ const IssueContent = () => (
   </main>
 );
 
-const Issue02 = () => (
+const Issue04 = () => (
   <div>
+    <Helmet title="Issue 04 | Design Systems Weekly" />
     <Nav />
     <IssueContent />
   </div>
 );
 
-export default Issue02;
+export default Issue04;

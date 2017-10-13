@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Helmet from "react-helmet";
 
 import Nav from "../../components/Nav";
 import Title from "../../components/Title";
@@ -118,6 +119,7 @@ const IssueContent = () => (
 
 const Issue01 = () => (
   <div>
+    <Helmet title="Issue 01 | Design Systems Weekly" />
     <Nav />
     <IssueContent />
   </div>

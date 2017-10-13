@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Helmet from "react-helmet";
 
 import Nav from "../../components/Nav";
 import Title from "../../components/Title";
@@ -130,11 +131,12 @@ const IssueContent = () => (
   </main>
 );
 
-const Issue02 = () => (
+const Issue05 = () => (
   <div>
+    <Helmet title="Issue 05 | Design Systems Weekly" />
     <Nav />
     <IssueContent />
   </div>
 );
 
-export default Issue02;
+export default Issue05;
