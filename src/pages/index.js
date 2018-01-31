@@ -21,11 +21,11 @@ const IssueList = () => (
           Issue 06 – coming soon
         </li>
         {/* date="13 October '17" */}
-        <IssueItem number="05" path="/issue/05"/>
+        <IssueItem number="05" path="/issue/05" />
         {/* date="5 October '17" */}
-        <IssueItem number="04" path="/issue/04"  />
+        <IssueItem number="04" path="/issue/04" />
         {/* date="26 September '17"  */}
-        <IssueItem number="03" path="/issue/03"/>
+        <IssueItem number="03" path="/issue/03" />
         {/* date="19 September '17" */}
         <IssueItem number="02" path="/issue/02" />
         {/* date="12 September '17"  */}
@@ -37,7 +37,7 @@ const IssueList = () => (
 
 const IndexPage = () => (
   <div>
-    <Hero message="A curated selection of links covering all things design systems, styleguides, pattern libraries and front-end architecture. Get the latest on how others are building, scaling and preventing entropy in their systems delivered to your inbox." />
+    <Hero message="A monthly curated selection of links covering all things design systems, styleguides, pattern libraries and front-end architecture. Get the latest on how others are building, scaling and preventing entropy in their systems delivered to your inbox." />
     <IssueList />
   </div>
 );

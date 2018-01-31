@@ -9,7 +9,7 @@ const Hero = props => (
       <SVGs />
       <Link to="/">
         <h1 className="pt2 f2-ns f3 fw5 white lh-title">
-          Design Systems Weekly
+          Design Systems Digest
         </h1>
       </Link>
       <p className="white-80 f5 fw3 lh-title">{props.message}</p>

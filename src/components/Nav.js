@@ -6,7 +6,7 @@ const Nav = props => (
     <div className="bg-black pt3 pb3 w-50-l w-70-m w-90 center">
       <Link to="/">
         <h1 className="pt2 f2-ns f3 fw5 white lh-title">
-          Design Systems Weekly
+          Design Systems Digest
         </h1>
       </Link>
       <p className="white-60 f5 fw3 lh-title">{props.message}</p>
