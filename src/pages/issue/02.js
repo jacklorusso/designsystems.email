@@ -138,7 +138,7 @@ const IssueContent = () => (
 
 const Issue02 = () => (
   <div>
-    <Helmet title="Issue 02 | Design Systems Weekly" />
+    <Helmet title="Issue 02 | Design Systems Digest" />
     <Nav />
     <IssueContent />
   </div>

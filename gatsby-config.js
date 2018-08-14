@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Design Systems Weekly`,
+    title: `Design Systems Digest`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-77015609-3',
+        trackingId: "UA-77015609-3"
       }
     }
   ]
-}
+};

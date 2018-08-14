@@ -1,20 +1,16 @@
 {
   "name": "designsystems.email",
-  "description": "Design Systems Weekly website",
+  "description": "Design Systems Digest website",
   "version": "1.0.0",
   "author": "Jack Lo Russo <jack.lorusso@gmail.com>",
-  "keywords": [
-    "design systems",
-    "newsletter",
-    "gatsby",
-    "tachyons"
-  ],
+  "keywords": ["design systems", "newsletter", "gatsby", "tachyons"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format":
+      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

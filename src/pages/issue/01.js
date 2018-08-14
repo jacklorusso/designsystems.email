@@ -17,7 +17,7 @@ const IssueContent = () => (
       </Link>
       <Title>Issue 01</Title>
       <div className="pb4 bb b--black-20 f5 lh-copy">
-        <p>You're reading the very first issue of Design Systems Weekly 🎉</p>
+        <p>You're reading the very first issue of Design Systems Digest 🎉</p>
         <p>
           I’ll be keeping an ear to the ground on what is happening in the
           colliding worlds of design systems, styleguides and front-end
@@ -119,7 +119,7 @@ const IssueContent = () => (
 
 const Issue01 = () => (
   <div>
-    <Helmet title="Issue 01 | Design Systems Weekly" />
+    <Helmet title="Issue 01 | Design Systems Digest" />
     <Nav />
     <IssueContent />
   </div>
