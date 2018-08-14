@@ -9,7 +9,7 @@ const ThankYou = () => (
       <SVGs />
       <h1 className="pt2 f2 fw5 white">Thank you</h1>
       <p className="white-80 measure f4 fw3 lh-copy">
-        I hope you enjoy the emails. Let me know on{" "}
+        I hope you enjoy the emails. Hit me up on{" "}
         <a
           className="link white fw4"
           href="https://twitter.com/lol_russo"

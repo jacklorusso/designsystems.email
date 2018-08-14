@@ -37,7 +37,7 @@ const IssueList = () => (
 
 const IndexPage = () => (
   <div>
-    <Hero message="A monthly curated selection of links covering all things design systems, styleguides, pattern libraries and front-end architecture. Get the latest on how others are building, scaling and preventing entropy in their systems delivered to your inbox." />
+    <Hero message="A curated selection of links covering all things design systems, styleguides, pattern libraries and front-end architecture. Get the latest on how others are building, scaling and preventing entropy in their systems delivered to your inbox." />
     <IssueList />
   </div>
 );
